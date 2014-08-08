@@ -1,0 +1,347 @@
+/* CSS Document */
+/*Import Reset CSS*/
+@import url(reset.css);
+@font-face {
+font-family: NIISans-Bold;
+src: local('fuentes/NIISans-Bold.ttf') format('truetype');
+}
+body {
+	padding:5px;
+	font-family: 'NIISans-Bold', Arial;
+}
+/*** PAGE ***/
+div#page {
+	width:900px;
+	height:auto;
+	margin:auto;
+	border:solid 0px red;
+}
+/*** HEAD ***/
+div#head {
+	background-color: #e05206;
+	background-image: url(/static/img/logo.png);        
+        background-repeat: no-repeat;
+	background-position: 2% center;
+	height:40px;
+	line-height:39px;
+	color:#FFF;
+	text-align:left;
+	font-size:14px;
+	font-family: 'NIISans-Bold', Arial;
+	padding:0 15px;
+}
+div#hlegal {
+	background-color: #e05206;
+	background-image: url(/static/img/logo.png);        
+        background-repeat: no-repeat;
+	background-position: right center;
+	height:60px;
+	line-height:39px;
+	color:#FFF;
+	text-align:left;	
+	font-family: 'NIISans-Bold', Arial;
+        font-size: 18px;
+        height: 39px;
+        line-height: 39px;
+        padding: 0 15px;
+        text-align: left;
+}
+
+/*** botonera ***/
+table#botonera {
+	background-color: #52514B;
+	color: #c55510;
+	padding:0px;
+        width: 100%;
+}
+/*** tonos ***/
+div#tonos {
+	background-color: #EBEAE6;
+	background-repeat: no-repeat;
+	background-position: 2% center;
+	line-height:40px;
+	color:#e05206;
+	text-align:left;
+	font-size:18px;
+	font-family: 'NIISans-Bold', Arial;
+	padding:0px 15px;
+}
+
+div#spacenton {
+	background-color: #e05206;
+	height:7px;	
+	padding:0 5px;
+}
+
+div#vermas {
+	background-color: #FFF;
+	height:30px;
+	line-height:30px;
+	color:#e05206;
+	text-align: right;
+	font-size:14px;
+	font-family: 'NIISans-Bold', Arial;
+        padding: 0px 10px;
+	
+}
+
+
+/*** destacado ***/
+div#destacado {
+    background-image: -moz-linear-gradient(center bottom , #F4F4F2 45%, #FEFEFE 80%);
+    background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0.45, #F4F4F2), color-stop(0.80, #FEFEFE) );    
+    border-bottom: 1px solid #CACAC8;
+    color: #726961;
+    display: block;
+    font-weight: bold;
+    height: auto;
+    line-height: 75px;
+    padding: 3px 10px;        
+        
+}
+div#destacado a {
+        display:block;
+	color: #5E5957;
+	font-weight:bold;
+	float:left;
+	line-height:18px;
+	margin-top:15px;
+	padding-left:10px;
+        width: 100%;
+        
+}
+#artista {
+    font-size: 14px;
+    padding: 0px 0px;
+    color: #5E5957;
+}
+#cancion {
+    font-size: 12px;
+    padding: 0px 0px;
+    color: #5E5957;
+}
+div#destacado a.vermas {
+	margin-top:0px;
+	background-image: url(/static/img/icono_lupa1.png);
+	width:12px;
+	float:right;
+	border:solid 0px red;
+	height:28px;
+	margin-top:20px;
+}
+div#destacado a span {
+	font-weight:normal !important;
+	display:block;
+        color: #5E5957;
+}
+div#destacado img {
+	/* Border radius */
+	-o-border-bottom-left-radius: 6px;
+	-webkit-border-bottom-left-radius: 6px;
+	-moz-border-radius-bottomleft: 6px;
+	border-bottom-left-radius: 6px;
+	float:left;
+	padding:6px;
+}
+div#list-titulo-precio {
+	background-color: #eceee7;
+	/* Border radius */
+		/* Border radius */
+			-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	-o-border-radius:6px;
+	border-radius:6px;
+	color: #100f0b;
+	font-size:12px;
+	padding: 10px;
+	margin-bottom:5px;
+	font-weight:normal;
+}
+div#list-titulo {
+	background-color: #726961;	
+	color: #fff;
+	font-size:14px;
+	line-height: 35px;
+	text-transform: none;
+	padding-right: 10px;
+	padding-left: 10px;
+	font-weight: bold;
+	
+	/*background-color: #d7d2cb;
+	color: #100f0b;*/
+}
+
+div#list-titulo.categoria {
+	margin-top:5px;
+}
+
+div#list-musica  {
+	background-color: #ebebe6;
+	margin:0 5px;
+	padding:0 0px;
+	font-size:14px;
+}
+
+div#list-musica  .list-item{
+
+background-image: linear-gradient(bottom, #E5E8E1 25%, #edeee8 54%);
+background-image: -o-linear-gradient(bottom, #E5E8E1 25%, #edeee8 54%);
+background-image: -moz-linear-gradient(bottom, #E5E8E1 25%, #edeee8 54%);
+background-image: -webkit-linear-gradient(bottom, #E5E8E1 25%, #edeee8 54%);
+background-image: -ms-linear-gradient(bottom, #E5E8E1 25%, #edeee8 54%);
+
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.25, #E5E8E1),
+	color-stop(0.54, #edeee8)
+);
+
+height:auto;
+color: #726961;
+font-weight:bold;
+padding:0 10px;
+	border-bottom:solid 1px #cacac8;
+}
+div#list-musica  .list-item.odd{
+
+background-image: linear-gradient(bottom, #f4f4f2 25%, #fefefe 54%);
+background-image: -o-linear-gradient(bottom, #f4f4f2 25%, #fefefe 54%);
+background-image: -moz-linear-gradient(bottom, #f4f4f2 25%, #fefefe 54%);
+background-image: -webkit-linear-gradient(bottom, #f4f4f2 25%, #fefefe 54%);
+background-image: -ms-linear-gradient(bottom, #f4f4f2 25%, #fefefe 54%);
+
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.25, #f4f4f2),
+	color-stop(0.54, #fefefe)
+);
+}
+div#list-musica  .list-item.marco{
+	padding:15px 20px;
+	line-height:18px !important;
+}
+div#list-musica  .list-item p{
+	font-weight:normal  !important;
+	line-height:18px;	
+}
+div#list-musica  .list-item p b{
+	font-weight:bold !important;}
+div#list-musica  .list-item span.numero{
+	display:block;
+	line-height:42px;
+	float:left;
+	text-align:center;
+	width:30px;
+}div#list-musica  .list-item img{
+	float:left;
+	padding:0px;
+	margin:0px;
+	margin-right:10px;
+	padding:5px 0;
+}
+
+div#list-musica  .list-item a {
+	color: #726961 !important;
+	display:block;	
+	border:solid 0px red;
+	float:left;
+	margin-top:7px;
+}
+div#list-musica  .list-item a.cat{
+	margin:0px;
+	font-size:14px;
+	line-height:39px;
+}
+div#list-musica  .list-item a.descarga{
+	margin-top:0px;
+	background-image: url(/static/img/descarga.png);
+	width:30px;
+	float:right;
+	border:solid 0px red;
+	height:42px;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+div#list-musica  .list-item a:hover {
+	text-decoration:underline;
+	}
+div#list-musica  .list-item a span {
+	font-weight:normal !important;
+	display:block;
+}
+
+div#footer {
+	background-color: #726961;	
+	color: #fff;
+	font-size:12px;
+	line-height: 25px;
+	text-transform: none;
+	padding-right: 10px;
+	padding-left: 10px;
+	font-weight: bold;
+	text-align:center;
+        margin-top: 19px;
+}
+div#footer a{	 
+	color: #fff;
+}
+#busqueda{
+    border: 1px solid #dadada;    
+    height: 35px;
+    width: 84%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px
+}
+#boton{
+    background:url('/static/img/nextel/icono_buscador.jpg') no-repeat; 
+    height: 35px;
+    width: 44px;
+    position:absolute; top:0px; right:0px;
+}
+
+div#destaque {
+    background-image: -moz-linear-gradient(center bottom , #F4F4F2 45%, #FEFEFE 80%);
+    background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0.45, #F4F4F2), color-stop(0.80, #FEFEFE) );    
+    border-bottom: 1px solid #CACAC8;
+    color: #726961;
+    display: block;
+    font-weight: bold;
+    height: auto;
+    line-height: 75px;
+    padding: 3px 10px;        
+        
+}
+.textimg {
+    color: #726961;
+    padding-left: 20px;
+}
+
+
+.marca2 {
+    margin: 0px 10px 2px ;
+    display: block;
+    vertical-align: central;
+    float: left;
+}
+
+.marca2 img{
+    padding:0;
+    margin:auto;    
+    display: block;
+    
+}
+
+div#menu table {
+    width: 100%;
+}
+
+div#menu table td a img {
+    border: medium none;
+    width: 100%;
+}

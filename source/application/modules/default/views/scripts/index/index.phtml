@@ -1,0 +1,86 @@
+<div id="page">
+    <div id="head"></div>
+    <div id="menu">
+    </div>
+    <!------------------------------ FT -------------------------------------->
+    <!------------------------------ FT -------------------------------------->
+    <!------------------------------ FT -------------------------------------->
+    <!------------------------------ FT -------------------------------------->
+    <div id="spacenton"></div>
+    <div> 
+        <a href="/go?link=/validacion?num=<?echo $this->str_number ?>&serv=_FTWAPNX">
+            <img width="100%" src="<?php echo MEDIA_URL ?>img/nextel/banner-musica-nextel.gif">
+        </a>
+    </div>
+    <div id="tonos"> <b>M&uacute;sica TOP</b></div>
+    <div id="spacenton"></div>
+    <?php if ((isset($this->ft) and $this->ft == "no-saldo")||(isset($this->rt) and $this->rt == "no-saldo")) { ?>
+        <p>Usted no cuenta con saldo sufienciente para realizar esta suscrupci&oacute;n</p>
+    <?php } ?>
+    <!-- espacio para agregar data -->          
+
+    <?php if (count($this->DESTACADOs) > 0) { ?>
+        <?php
+        foreach ($this->DESTACADOs as $destacado) {
+            foreach ($this->dataContenidoFt as $item) {
+                ?>
+                <div id="destacado">                    
+                    <a href="/go?link=/validacion?num=<?echo $this->str_number ?>&serv=_FTWAPNX">
+                        <div id="artista" style=""><?= strtoupper($item["Tema"]); ?> </div>
+                        <div id="cancion" style=""><span><?= $item["Artista"]; ?></span></div>
+                    </a>
+                    <div style="clear:both"></div>                    
+                </div>  
+                <?php
+            }
+        }
+    }
+    ?>	
+
+    <a href="/go?link=/validacion?num=<?echo $this->str_number ?>&serv=_FTWAPNX">
+        <div id="vermas"> Ver m&aacute;s</div>
+    </a>
+    <div id="spacenton"></div>
+
+    <!------------------------------ RT -------------------------------------->
+    <!------------------------------ RT -------------------------------------->
+    <!------------------------------ RT -------------------------------------->
+    <!------------------------------ RT -------------------------------------->
+
+    <div id="publicidad">
+        <a href="/go?link=/validacion?num=<?echo $this->str_number ?>&serv=_RTWAPNX">
+            <img width="100%" src="<?php echo MEDIA_URL ?>img/nextel/banner_tonos_nextel.gif">
+        </a>
+    </div>
+    <div id="tn"></div>
+    <div id="tonos" style="background-color: #FFF"> <b>Tonos</b></div>
+    <div id="spacenton"></div>
+    <!-- espacio para agregar data -->
+    <?php if (count($this->DESTACADOs) > 0) { ?>
+
+        <?php
+        foreach ($this->DESTACADOs as $destacado) {
+            foreach ($this->dataContenidoRt as $item) {
+                ?>
+                <div id="destacado">                    
+                    <a href="/go?link=/validacion?num=<?echo $this->str_number ?>&serv=_RTWAPNX&item=true&cod=<?= $item['CodigoRBT']; ?>">
+                        <div id="cancion" style=""><?= strtoupper($item["Tema"]); ?> </div>
+                        <div id="artista" style=""><span><?= $item["Artista"]; ?></span></div>
+                    </a>
+                    <div style="clear:both"></div>                    
+                </div>  
+                <?php
+            }
+        }
+    }
+    ?>
+
+    <a href="/go?link=/validacion?num=<?echo $this->str_number?>&serv=_RTWAPNX"><div id="vermas"> Ver m&aacute;s</div></a>
+    <div id="spacenton"></div>
+    <div id="publicidad">
+        <a href="/go?link=http://mobile.terra.com/sc/pe/suscfutnex/">
+            <img width="100%" src="<?php echo MEDIA_URL ?>img/nextel/banner_futbol.gif">
+        </a>
+    </div>
+    <div id="footer"><a href="/go?link=legal">Legal</a></div>
+</div>

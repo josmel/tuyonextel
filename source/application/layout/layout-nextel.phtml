@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <?= $this->headTitle() ?>
+        <?= $this->headMeta() ?>
+        <link rel="shortcut icon" href="<?php echo MEDIA_URL ?>img/favicon.ico">
+            <link rel="stylesheet" media="screen" href="<?php echo MEDIA_URL ?>css/wap/main.css" />
+            <link rel="stylesheet" media="screen" href="<?php echo MEDIA_URL ?>css/wap/reset.css" />
+            <!--[if IE 6]><link rel="stylesheet" media="screen" href="css/ie6.css" /><![endif]-->
+            <!--[if IE 7]><link rel="stylesheet" media="screen" href="css/ie7.css" /><![endif]-->
+
+            <!-- Media Queries -->
+            <link rel="stylesheet" media="screen and (max-width: 900px)" href="<?php echo MEDIA_URL ?>css/wap/pad.css" />
+            <link rel="stylesheet" media="handheld and (max-width: 400px), screen and (max-device-width: 400px),screen and (max-width: 400px)" href="<?php echo MEDIA_URL ?>css/wap/mobile.css" />
+            <!-- google analytics - NO BORRAR -->
+            <script type="text/javascript">
+                var _gaq = _gaq || [];
+                _gaq.push(['_setAccount', 'UA-18739622-1']);
+                _gaq.push(['_trackPageview']);
+
+                (function() {
+                    var ga = document.createElement('script');
+                    ga.type = 'text/javascript';
+                    ga.async = true;
+                    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                    var s = document.getElementsByTagName('script')[0];
+                    s.parentNode.insertBefore(ga, s);
+                })();
+
+            </script>
+            <!-- fin de google analytics -->
+    </head>
+    <body>
+        <div class="page">
+            <?= $this->layout()->content ?>
+        </div>
+    </body>
+</html>

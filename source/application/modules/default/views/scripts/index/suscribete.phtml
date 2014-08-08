@@ -1,0 +1,26 @@
+<div id="page">  
+    <div id="hlegal"><?php echo $this->tit; ?></div>  
+    <div id="publicidad"> 		
+        <img width="100%" src="<?php echo $this->img ?>">                
+    </div>  
+    <?php if ($this->saldo == "no") { ?>
+        <div id="list-titulo-precio">      
+            <p><b>Estimado usuario, usted no cuenta con saldo suficiente para realizar la suscripci&oacute;n.</b></p>
+            <div>
+            <?php } ?>
+            <div id="list-titulo-precio">      
+                <?php echo $this->texto; ?>
+                <form name="frm" action="/confirma-suscripcion" method="post">
+                    <div class="btn-ancho" style="text-align: center;color: #FFFFFF;font-weight: bold;margin: 20px auto;border-radius: 4px;padding: 3px;-moz-box-sizing: border-box;border: medium none;" >
+                        <input type="hidden" name="serv" value="<?php echo $this->v ?>">
+                        <input type="hidden" name="nue" value="<?php echo $this->nue ?>">
+                        <input type="submit" name="boton" value="ACEPTAR" style="color: #FFFFFF; font-size: 14px;background-color:#E05206;font-weight:bold;" onclik="submit();">
+                    </div>
+                    <input type="hidden" name="cod" value="<?php echo $this->cod ?>">
+                    <input type="hidden" name="item" value="<?php echo $this->item ?>">
+
+                </form> 
+            </div>  
+        </div>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+/* CSS Document */
+
+/*** PAGE ***/
+div#page {
+	width:100%;
+	height:auto;
+	margin:auto;
+	border:solid 0px red;
+}
+div#destacado  {
+	height:auto !important;
+
+}
+div#destacado a {
+	display:block;
+	color: #e05206;
+	font-weight:bold;
+	line-height:18px;
+	margin-top:5px;
+	padding-left:10px;
+	font-size:14px;
+}

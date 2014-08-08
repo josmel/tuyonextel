@@ -1,0 +1,9 @@
+/* CSS Document */
+
+/*** PAGE ***/
+div#page {
+	width:100%;
+	height:auto;
+	margin:auto;
+	border:solid 0px red;
+}

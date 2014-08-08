@@ -1,0 +1,84 @@
+/* CSS Document */
+body{ padding:0px; margin:0px;}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body { 
+	line-height: 1; 
+	-webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-bottom:0.7em;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight:none;
+}
+ul { 
+	list-style: none; 
+}
+ol {
+	
+	list-style-type: decimal; 
+}
+a {
+	text-decoration:none;
+	color:#007eb2;
+	/*-webkit-transition: all 400ms linear;
+	-moz-transition: all 400ms linear;
+	-o-transition: all 400ms linear;
+	transition: all 400ms linear;*/
+}
+a:hover {
+	color:#333;
+}
+abbr {
+	border-bottom:1px dotted #999;
+	cursor: help;
+}
+del { text-decoration: line-through; }
+input,textarea {
+	padding:3px;
+	width:100%;
+	font:normal 14px/1.5 Arial;
+	border:none;
+	/* border radius */
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	-o-border-radius:4px;
+	border-radius:4px;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box; 
+}
+.btn-ancho{ 
+    margin:20px auto;
+    position: center;
+    background-color: #e05206; 
+    color:#fff; 
+    font-weight:bold;
+}
+

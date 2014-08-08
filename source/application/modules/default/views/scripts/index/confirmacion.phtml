@@ -1,0 +1,13 @@
+<div id="page">
+    <div id="head"></div>
+    <div id="list-titulo-precio" style="text-align:center;"><?
+        setlocale(LC_ALL, "es_ES@euro", "es_ES", "esp");
+        $timezone = 1; //(GMT -5:00) EST (U.S. & Canada) 						
+        echo strftime("%d/%b/%Y ", time() + 3600 * ($timezone));
+        ?> </div>
+    <div id="list-musica" style="padding:20px; border:solid 0px red; text-align:center;">
+        Tu solicitud est&aacute; en proceso. Recibir&aacute;s una confirmaci&oacute;n  por SMS.<br /> 
+        <!-- 			     Costo: US$0.50 interdiario.  -->
+    </div>
+    <div id="footer"><a href="/go?link=/legal">Legal</a> | <a href="/">Volver</a></div>
+</div>

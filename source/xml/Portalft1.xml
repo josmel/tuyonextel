@@ -1,0 +1,27 @@
+<PORTALWAP CODE="1" TITULO="Club de Música">
+  <HEAD TYPE="LISTA">
+    <DESTACADO>
+      <NOMBRE>Destacado</NOMBRE>
+      <TITULOENPORTAL>Club de Música</TITULOENPORTAL>
+      <TEXTOENPORTAL>Suscríbete para descargar todas las canciones que puedas por solo US$ 0.59 por día.</TEXTOENPORTAL>
+      <ALBUM>62</ALBUM>
+      <KEYWORD>_FTWAP</KEYWORD>
+      <FILASXPAGINA>1</FILASXPAGINA>
+      <NUMPAGINA>0</NUMPAGINA>
+      <RUTAIMAGEN>_ImagenesPortalWap/destacado_aji_cocona.jpg</RUTAIMAGEN>
+    </DESTACADO>
+  </HEAD>
+  <BODY TYPE="LISTA">
+    <ITEM>
+      <NOMBRE>Principal</NOMBRE>
+      <TITULOENPORTAL>Top 10</TITULOENPORTAL>
+      <TEXTOENPORTAL>prueba</TEXTOENPORTAL>
+      <ALBUM>42</ALBUM>
+      <KEYWORD>_FTWAP</KEYWORD>
+      <FILASXPAGINA>10</FILASXPAGINA>
+      <NUMPAGINA>0</NUMPAGINA>
+      <RUTAIMAGEN>
+      </RUTAIMAGEN>
+    </ITEM>
+  </BODY>
+</PORTALWAP>

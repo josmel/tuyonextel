@@ -1,0 +1,19 @@
+<div id="page">
+    <div id="head"></div>
+    <div id="list-titulo-precio"> Introduce tu n&uacute;mero de nextel y haz clic en &quot;Enviar&quot;</div>
+    <div id="list-musica" style="padding:20px; border:solid 0px red;">
+        <form name="frm" action="/validacion" method="GET">
+            <div style="">
+                <input id="id_num" type="text" name="nue" class="c-filtro" />
+                <input type="hidden" name="c" value="<? echo $this->c; ?>" />
+                <input type="hidden" name="v" value="<? echo $this->v; ?>" />
+            </div>
+            <?php
+            echo $body;
+            ?>
+            <input type="submit" class="btn-ancho" value="Enviar" />
+            <input type="hidden" name="serv" value="<? echo $this->serv; ?>"/>
+        </form> 
+    </div>
+    <div id="footer"><a href="/go?link=/legal">Legal</a></div>
+</div>
