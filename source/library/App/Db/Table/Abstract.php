@@ -17,7 +17,7 @@ class App_Db_Table_Abstract extends Zend_Db_Table_Abstract
         $this->_prefix = $this->_name.'_';
         $this->_db = $this->getAdapter();
         //$this->_cache = Zend_Registry::get('cache');
-        
+       
         parent::__construct($config);
     }
     

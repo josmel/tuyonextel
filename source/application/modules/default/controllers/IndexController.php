@@ -11,8 +11,8 @@ class Default_IndexController extends App_Controller_Action_Portal {
     }
 
     public function indexAction() {
-        $ft = isset($_GET['ft']) ? $_GET['ft'] : "";
-        $rt = isset($_GET['rt']) ? $_GET['rt'] : "";
+        $ft = $this->_getParam('ft', '');
+        $rt = $this->_getParam('rt', '');
         $portal = new App_Entity_PooArweb();
         $nusoap = new App_Entity_Nusoap();
         $DESTACADOs = $portal->getDestacado();
@@ -36,18 +36,16 @@ class Default_IndexController extends App_Controller_Action_Portal {
         $this->view->rt = $rt;
     }
 
-      public function validacionAction() {
-
-        $v = isset($_GET['v']) ? $_GET['v'] : "1";
-        $item = isset($_GET['item']) ? $_GET['item'] : NULL;
-        $cod = isset($_GET['cod']) ? $_GET['cod'] : NULL;
-        $serv = isset($_GET['serv']) ? $_GET['serv'] : header("Location: http://bip.pe/pe/ne/wap/nextelportal/") && die();
+    public function validacionAction() {
+        $v = $this->_getParam('v', "1");
+        $item = $this->_getParam('item', NULL);
+        $cod = $this->_getParam('cod', NULL);
+        $serv = $this->_getParam('serv', header("Location: http://bip.pe/pe/ne/wap/nextelportal/") && die());
         $portalCobro = new App_Entity_CobroShootLink();
         if (isset($_SERVER['HTTP_MSISDN']) && $_SERVER['HTTP_MSISDN'] != "") {
             $str_number = $_SERVER['HTTP_MSISDN'];
             $portalCobro->shootLink($str_number, $c, "0", $serv, $item, $cod);
         }
-
         if (isset($_SERVER['HTTP_COOKIE']) && $_SERVER['HTTP_COOKIE'] != "") {
             $b = strpos($_SERVER['HTTP_COOKIE'], "msisdn=") + 7;
             if ($b != "7") {
@@ -56,7 +54,6 @@ class Default_IndexController extends App_Controller_Action_Portal {
                 $portalCobro->shootLink($str_number, $c, "0", $serv, $item, $cod);
             }
         }
-
         if (isset($_SERVER['HTTP_X_UP_SUBNO']) && $_SERVER['HTTP_X_UP_SUBNO'] != "") {
             $dosG = $_SERVER['HTTP_X_UP_SUBNO'];
             //$dosG = "PER0006111680_net2.nextelinternational.com";
@@ -103,7 +100,7 @@ class Default_IndexController extends App_Controller_Action_Portal {
         $this->view->c = $c;
         $this->view->v = $v;
     }
-    
+
     public function suscribeteAction() {
 
         $v = isset($_GET['serv']) ? $_GET['serv'] : "1";
@@ -180,8 +177,6 @@ Selecciona una imagen y se la enviaremos a la persona que elijas. Costo por susc
         $this->view->saldo = $saldo;
     }
 
-  
-
     public function confirmacionAction() {
 
         if (isset($_SERVER['HTTP_X_UP_CALLING_LINE_ID']) && $_SERVER['HTTP_X_UP_CALLING_LINE_ID'] != "") {
@@ -194,7 +189,7 @@ Selecciona una imagen y se la enviaremos a la persona que elijas. Costo por susc
                     if (strlen($str_number) < 11) {
                         $str_number = "51" . $str_number;
                     }
-                } 
+                }
             }
         }
     }
@@ -317,7 +312,7 @@ Selecciona una imagen y se la enviaremos a la persona que elijas. Costo por susc
     }
 
     public function goAction() {
-        
+
         $_getVars = $_GET;
         $_key = array_keys($_getVars);
         $_valor = array_values($_getVars);

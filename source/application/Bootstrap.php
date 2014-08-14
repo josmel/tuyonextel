@@ -62,6 +62,13 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap {
         Zend_Controller_Action_HelperBroker::addHelper(new App_Controller_Action_Helper_Auth());
         Zend_Controller_Action_HelperBroker::addHelper(new App_Controller_Action_Helper_Security());
     }
+    
+      protected function _initRewrite() {
+        $front = Zend_Controller_Front::getInstance();
+        $router = $front->getRouter();
+        $configs = new Zend_Config_Ini(APPLICATION_PATH . '/configs/routes.ini', 'production');
+        $router->addConfig($configs, 'routes');
+    }
 
 }
 

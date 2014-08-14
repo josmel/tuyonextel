@@ -82,7 +82,7 @@ class App_Entity_CobroShootLink {
                 exit;
             } else {
                 if ($EstaSuscritoResult == '0' and $item = "true" and is_numeric($cod)) {
-                    header("Location: suscribete.php?serv=$serv&item=true&cod=$cod");
+                    header("Location: suscribete?serv=$serv&item=true&cod=$cod");
                     exit;
                 }
                 header("Location: suscribete?serv=$serv");
@@ -117,7 +117,7 @@ class App_Entity_CobroShootLink {
                             }
                         }
                     }
-                    header("Location: http://bip.pe/pe/ne/wap/rt-devel/");
+                    header("Location: http://bip.pe/pe/ne/wap/rt-devel/?num=$NUMBER");
                     exit;
                     break;
                 case '_FTWAPNX':
